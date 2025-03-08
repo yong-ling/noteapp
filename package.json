@@ -12,7 +12,13 @@
     "lint": "expo lint"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@react-native|react-native|@react-navigation|uuid|@react-native-picker)/)"
+    ]
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "1.17.11",
@@ -31,6 +37,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^13.2.0",
     "@types/jest": "^29.5.14",
     "@types/react": "~18.0.27",
     "@types/react-test-renderer": "^18.3.0",
@@ -42,7 +50,7 @@
     "jest": "^29.7.0",
     "jest-expo": "^52.0.5",
     "prettier": "^3.5.3",
-    "react-test-renderer": "18.3.1",
+    "react-test-renderer": "18.2.0",
     "ts-jest": "^29.2.6",
     "typescript": "^4.9.4"
   },
