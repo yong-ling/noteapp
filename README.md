@@ -20,12 +20,6 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
     npx expo start -c
    ```
 
-5. Run test
-
-   ```bash
-   yarn test
-   ```
-
 In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
@@ -35,4 +29,8 @@ In the output, you'll find options to open the app in a
 
 Choose iOS simulator to start and it will find an available simulator to start.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+5. Run test
+
+   ```bash
+   yarn test
+   ```
